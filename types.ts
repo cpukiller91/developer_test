@@ -1,6 +1,6 @@
 export type Activity = {
   activity: string,
-  tipe: string | null,
+  type: string | null, // поправил tipe на type
   participants: number,
   price: number,
   link: string,
