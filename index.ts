@@ -7,9 +7,10 @@ import { Activity } from "./types";
 let bored_api_url = "https://www.boredapi.com/api/activity";
 let friends_count = 1;
 friends_count++;
-
 let PRICE_LIMIT = 0.5;
-let countActivity = 4;
+
+let countActivity = 4; // Управление количеством Занятий
+
 bored_api_url += "?maxprice="+PRICE_LIMIT+"&maxparticipants="+friends_count;
 
 async function fetchActivity(): Promise<Activity> {
